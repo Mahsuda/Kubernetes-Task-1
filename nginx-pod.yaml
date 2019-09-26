@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: apache
+    pod: nginx-pod
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    stdin: true
+    tty: true
